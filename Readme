@@ -1,1 +1,50 @@
-this is readme
+# Diabetic Retinopathy Detection using CNN
+This project focuses on building a Convolutional Neural Network (CNN) to detect Diabetic Retinopathy (DR) from pre-processed retina images. The model performs binary classification, identifying whether or not a patient has DR. This solution utilizes TensorFlow and Keras libraries for efficient model training, validation, and testing.
+
+## Dataset
+The dataset used in this project is the Diabetic Retinopathy 224x224 Gaussian Filtered Dataset from Kaggle. It contains pre-processed retina images classified into 5 categories based on severity.
+Dataset Link: Diabetic Retinopathy - Gaussian Filtered (Kaggle)
+
+For this project, the dataset is split into Training, Validation, and Testing sets with binary labels indicating either DR presence or absence.
+
+## Project Structure
+
+```project-directory/
+│
+├── train/               # Training data directory (binary classification)
+├── val/                 # Validation data directory (binary classification)
+├── test/                # Testing data directory (binary classification)
+├── model/               # Saved model
+│   └── 64x3-CNN.keras   # Trained CNN model file
+├── archive/             # Original dataset folder
+├── README.md            # Project documentation (this file)
+├── train.csv            # CSV file with labels and IDs
+└── main.py              # Python script with model code```
+
+## Setup Instructions
+
+Prerequisites
+Ensure you have the following libraries installed:
+
+`pip install tensorflow numpy pandas matplotlib scikit-learn opencv-python`
+
+## How to Run
+
+Step 1: Clone the Repository
+Copy the code files and place the dataset in the proper folder structure.
+
+Step 2: Prepare the Dataset
+The dataset is split into Training, Validation, and Testing sets using train_test_split() based on the type of DR.
+
+Step 3: Train the Model
+Run the following code to train the model:
+
+`python main.py`
+
+## Conclusion
+This project successfully detects Diabetic Retinopathy using a CNN model, achieving good accuracy on the test set. Further improvements can be made by experimenting with deeper models and fine-tuning hyperparameters.
+
+## License
+This project is for educational purposes only. The dataset used is publicly available on Kaggle under their terms of use.
+
+
