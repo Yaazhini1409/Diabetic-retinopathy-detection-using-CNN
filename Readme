@@ -1,4 +1,6 @@
 # Diabetic Retinopathy Detection using CNN
+
+
 This project focuses on building a Convolutional Neural Network (CNN) to detect Diabetic Retinopathy (DR) from pre-processed retina images. The model performs binary classification, identifying whether or not a patient has DR. This solution utilizes TensorFlow and Keras libraries for efficient model training, validation, and testing.
 
 ## Dataset
